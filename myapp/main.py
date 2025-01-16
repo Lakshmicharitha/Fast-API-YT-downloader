@@ -11,7 +11,7 @@ app = FastAPI()
 # Allow CORS for frontend running on localhost:3000 (adjust as needed)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://fast-api-yt-downloader-1.onrender.com"],  # Allow frontend from localhost:3000
+    allow_origins=["http://localhost:3000", "https://fast-api-yt-downloader-1.onrender.com/download"],  # Allow frontend from localhost:3000
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
