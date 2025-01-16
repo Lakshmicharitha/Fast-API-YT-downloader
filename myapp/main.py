@@ -28,3 +28,8 @@ def download_video(link: str = Form(...)):
     with yt_dlp.YoutubeDL(youtube_dl_options) as ydl:
         ydl.download([link])
     return {"status":"Download started"}
+
+if __name__ == "__main__":
+    import uvicorn
+    # Run the app on localhost and port 8000
+    uvicorn.run(app, host="0.0.0.0", port=8000)
