@@ -77,7 +77,7 @@
                 var formData = new FormData();
                 formData.append('link', videoUrl);
     
-                fetch('http://127.0.0.1:8000/download', {
+                fetch('https://fast-api-yt-downloader-1.onrender.com/download', {
                     method: 'POST',
                     body: formData,  // Content-Type is automatically set by FormData
                 })
